@@ -3,6 +3,18 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
+  sum = 0
+  if array[0] < array[1]
+    (array[0]..array[1]).each do |number|
+      sum = sum + number 
+    end
+     return sum
+  elsif 
+    (array[1]..array[0]).each do |number|
+      sum = sum + number
+    end
+      return sum
+  end
 
 end
 
